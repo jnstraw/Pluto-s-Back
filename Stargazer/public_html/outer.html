@@ -36,7 +36,7 @@ and open the template in the editor.
                 <div class="collapse navbar-collapse" id="mainNavBar">
                     <ul class="nav navbar-nav">
                         <!-- Drop Down Menu -->
-                        <li class="dropdown active">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inner System <span class="caret"></span> </a>
                             <ul class="dropdown-menu">
                                 <li> <a href="sun.html">Sun </a></li>
@@ -46,7 +46,7 @@ and open the template in the editor.
                                 <li> <a href="mars.html">Mars </a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
+                        <li class="dropdown active">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outer System <span class="caret"></span> </a>
                             <ul class="dropdown-menu">
                                 <li> <a href="jupiter.html">Jupiter </a></li>
@@ -66,11 +66,45 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore Earth!</h1>
+        
+        <!-- Main Content -->
+        <div class="container-fluid" bgcolor="#0e0b16" text="#a239ca">
+            <h1>Stargazer Outer System</h1>
             <div class="row">
-                <div class="col-lg-4">
-                    <a href="#"><img src="images/earth.png" class="img-responsive"></a>
+                <div class="col-lg-2">
+                    <a href="jupiter.html"><img src="images/jupiter.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="saturn.html"><img src="images/saturn.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="uranus.html"><img src="images/uranus.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="neptune.html"><img src="images/neptune.png" class="img-responsive"></a>
                 </div>
             </div>
+            
+            <h2>This is how to make a well and what they look like</h2>
+            <!-- Good for alert boxes -->
+            <div class="well"><font color="#000000">Basic Well</font> </div>
+            
+            <div class="well well-sm"><font color="#000000">small Well</font></div>
+            
+            <div class="alert alert-success fade in">
+                <a href='#' class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                You Got 10 Points! 
+            </div>
+            
+            <div class="alert alert-info">
+                <a href='#' class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                This'll close the alert -> 
+            </div>
+            
+            <div class="alert alert-danger fade in">
+                <a href='#' class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                This will fade away
+            </div>
+        </div>
     </body>
 </html>
