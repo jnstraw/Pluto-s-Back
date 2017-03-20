@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Stargazer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>﻿
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <style type="text/css">
+            body { background: #0e0b16 !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+        </style>
+    </head>
+    <body>
+        <!-- Top Menu Bar -->
+        <nav class="navbar-inverse">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="main.html" class="navbar-brand">Stargazer</a>
+                </div>
+                
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse" id="mainNavBar">
+                    <ul class="nav navbar-nav">
+                        <!-- Drop Down Menu -->
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Inner System <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="sun.html">Sun </a></li>
+                                <li> <a href="mercury.html">Mercury </a></li>
+                                <li> <a href="venus.html">Venus </a></li>
+                                <li> <a href="earth.html">Earth </a></li>
+                                <li> <a href="mars.html">Mars </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Outer System <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="jupiter.html">Jupiter </a></li>
+                                <li> <a href="saturn.html">Saturn </a></li>
+                                <li> <a href="neptune.html">Neptune </a></li>
+                                <li> <a href="uranus.html">Uranus </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span> </a>
+                            <ul class="dropdown-menu">
+                                <li> <a href="about.html">About </a></li>
+                                <li> <a href="links.html">Links </a></li>
+                                <li> <a href="contact.html">Contact Us </a></li>
+                            </ul>
+                        </li>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Main Content -->
+        <div class="container-fluid" bgcolor="#0e0b16" text="#a239ca">
+            <h1>Stargazer Inner System</h1>
+            <div class="row">
+                <div class="col-lg-2">
+                    <a href="sun.html"><img src="images/sun.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="mercury.html"><img src="images/mercury.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="venus.html"><img src="images/venus.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="earth.html"><img src="images/earth.png" class="img-responsive"></a>
+                </div>
+                <div class="col-lg-2">
+                    <a href="mars.html"><img src="images/mars.png" class="img-responsive"></a>
+                </div>
+            </div>
+            
+            <h2>This is how to make a well and what they look like</h2>
+            <!-- Good for alert boxes -->
+            <div class="well"><font color="#000000">Basic Well</font> </div>
+            
+            <div class="well well-sm"><font color="#000000">small Well</font></div>
+            
+            <div class="alert alert-success fade in">
+                <a href='#' class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                You Got 10 Points! 
+            </div>
+            
+            <div class="alert alert-info">
+                <a href='#' class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                This'll close the alert -> 
+            </div>
+            
+            <div class="alert alert-danger fade in">
+                <a href='#' class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                This will fade away
+            </div>
+        </div>
+    </body>
+</html>
