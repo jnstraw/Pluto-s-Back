@@ -1,0 +1,12 @@
+Stargazer
+Creators: Ian, Eamonn, James, Jesse, Josh
+
+This project is for educational uses in the classroom to help elementary level kids more about our solar system.
+
+We're using a lot of HTML, JS, and CSS to make this all work. Along side the tools we're using
+NetBeans and Bootstap3.
+
+Each planet in the system has their own information with facts about them. Along side this there will be
+an interactive Javascript flash game to track progress and knowledge of the system.
+
+We hope teachers would use this in the classroom to help teach their students more about the universe around us.
