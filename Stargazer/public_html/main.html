@@ -15,7 +15,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
-            body { background: #0e0b16 !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+            body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
         </style>
     </head>
     <body>
@@ -73,19 +73,34 @@ and open the template in the editor.
             <h1>Stargazer Inner System</h1>
             <div class="row">
                 <div class="col-lg-2">
-                    <a href="sun.html"><img src="images/sun.png" class="img-responsive"></a>
+                    <a href="sun.html">
+						<img src="images/sun.gif" onmouseover="this.src='images/sunA.gif';" 
+							onmouseout="this.src='images/sun.gif';" class="img-responsive">
+					</a>
                 </div>
                 <div class="col-lg-2">
-                    <a href="mercury.html"><img src="images/mercury.png" class="img-responsive"></a>
+                    <a href="mercury.html">
+						<img src="images/mercury.gif" onmouseover="this.src='images/mercuryA.gif';" 
+							onmouseout="this.src='images/mercury.gif';" class="img-responsive">
+					</a>
                 </div>
                 <div class="col-lg-2">
-                    <a href="venus.html"><img src="images/venus.png" class="img-responsive"></a>
+                    <a href="venus.html">
+						<img src="images/venus.gif" onmouseover="this.src='images/venusA.gif';" 
+							onmouseout="this.src='images/venus.gif';" class="img-responsive">
+					</a>
                 </div>
                 <div class="col-lg-2">
-                    <a href="earth.html"><img src="images/earth.png" class="img-responsive"></a>
+                    <a href="earth.html">
+						<img src="images/earth.gif" onmouseover="this.src='images/earthA.gif';" 
+							onmouseout="this.src='images/earth.gif';" class="img-responsive">
+					</a>
                 </div>
                 <div class="col-lg-2">
-                    <a href="mars.html"><img src="images/mars.png" class="img-responsive"></a>
+                    <a href="mars.html">
+						<img src="images/mars.gif" onmouseover="this.src='images/marsA.gif';" 
+							onmouseout="this.src='images/mars.gif';" class="img-responsive">
+					</a>
                 </div>
                 <div class="col-lg-2">
                     <a href="outer.html"><h2>To Outer System</h2></a>
