@@ -14,6 +14,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
         <style type="text/css">
             body { background: #0e0b16 !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
         </style>
@@ -72,5 +73,27 @@ and open the template in the editor.
                     <a href="#"><img src="images/earth.png" class="img-responsive"></a>
                 </div>
             </div>
+        <div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Fact 1</a>
+    
+    <!-- Modal HTML -->
+    <div id="fact1" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Fact1</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Earth is where we live!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     </body>
 </html>
