@@ -16,6 +16,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
             body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+			.img-responsive { float: none; margin: 0 auto; }
+			.btn { margin-bottom: 5px; }
         </style>
     </head>
     <body>
@@ -53,7 +55,7 @@ and open the template in the editor.
                                 <li> <a href="saturn.html">Saturn </a></li>
                                 <li> <a href="uranus.html">Uranus </a></li>
                                 <li> <a href="neptune.html">Neptune </a></li>
-				<li> <a href="pluto.html">Pluto </a></li>
+								<li> <a href="pluto.html">Pluto </a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -67,188 +69,188 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore the Sun!</h1>
+        <h1 class="text-center">Let's Explore the Sun!</h1>
             <div class="row">
+				<!-- LEFT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">The Center</a>
+					<div id="fact1" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">The Sun's position</h4>
+								</div>
+								<div class="modal-body">
+									<p>The Sun is the center of our Solar System, where all the other planets revolve around it.</p>
+									<br>
+									<p>This is why it is called the "Solar" system.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">Size</a>
+					<div id="fact2" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Bigger than  you'd think</h4>
+								</div>
+								<div class="modal-body">
+									<p>The Sun is the largest object in our Solar System.</p>
+									<p>From Earth, it looks to be the same size as the moon, but it's actually 400 times bigger!</p>
+									<br>
+									<p>The Sun is 1,390,000 km in diameter, and has a mass of 1.989 x 10^30 kg.</p>
+									<p>This is 99.8% of all the mass in our Solar System!</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">How hot?</a>
+					<div id="fact3" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">It's the hottest!</h4>
+								</div>
+								<div class="modal-body">
+									<p>The Sun is the hottest thing in our Solar System.</p>
+									<br>
+									<p>The Sun has a temperature of 9,980 degrees (5800 K) on its surface, and 28 million degrees (15600000 K) in its core.</p>
+									<p>Remember not to look directly at it!</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">A Star</a>
+					<div id="fact4" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">It's a star!</h4>
+								</div>
+								<div class="modal-body">
+									<p>The Sun is a star, and the closest one to us.</p>
+									<br>
+									<p>In fact, the Sun is bigger than 90% of all other stars.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- IMAGE -->
                 <div class="col-lg-4">
                     <a href="#">
 						<img src="images/sun.gif" onmouseover="this.src='images/sunA.gif';" 
 							onmouseout="this.src='images/sun.gif';" class="img-responsive">
 					</a>
                 </div>
+				<!-- RIGHT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact5" class="btn btn-lg btn-primary" data-toggle="modal">Solar flares</a>
+					<div id="fact5" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">What's a solar flare?</h4>
+								</div>
+								<div class="modal-body">
+									<p>Solar flares are winds of particles with high energy that emit from the Sun's surface.</p>
+									<br>
+									<p>These winds cause different disturbances on Earth, and are the reason we have the northern lights (know as the aurora borealis).</p>
+									<br>
+									<p>Mouse over the Sun to see them in motion!</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact6" class="btn btn-lg btn-primary" data-toggle="modal">Sunspots</a>
+					<div id="fact6" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">What are sunspots?</h4>
+								</div>
+								<div class="modal-body">
+									<p>Sunspots are dark spots on the Sun's surface that are much cooler than the rest of the surface.</p>
+									<br>
+									<p>These spots are around 3,000 degrees cooler, and are a result of the Sun's magnetic field.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact7" class="btn btn-lg btn-primary" data-toggle="modal">Magnetic field</a>
+					<div id="fact7" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">How big is its pull?</h4>
+								</div>
+								<div class="modal-body">
+									<p>The Sun has a magnetic field that is big enough to pull all the other planets in our Solar System around it.</p>
+									<br>
+									<p>This magnetic field comes from its massive size and density, and and can pull objects over 3 billion miles out (including Pluto)!</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact8" class="btn btn-lg btn-primary" data-toggle="modal">Inside out</a>
+					<div id="fact8" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Layers of the Sun</h4>
+								</div>
+								<div class="modal-body">
+									<p>The Sun consist of the following layers from the inside out:</p>
+									<p>- The Core</p>
+									<p>- The Radioactive Zone</p>
+									<p>- The Conective Zone</p>
+									<p>- The Photosphere (the surface you can see)</p>
+									<p>- The Chromoshpere</p>
+									<p>- The Corona</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-    <div class="example">
-    <!-- Button HTML (to Trigger Modal) -->
-    <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">The Center</a>
-    
-    <!-- Modal HTML -->
-    <div id="fact1" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">The Sun's position</h4>
-                </div>
-                <div class="modal-body">
-                    <p>The Sun is the center of our Solar System, where all the other planets revolve around it.</p>
-					<br>
-					<p>This is why it is called the "Solar" system.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">Size</a>
-
-    <div id="fact2" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Bigger than  you'd think</h4>
-                </div>
-                <div class="modal-body">
-                    <p>The Sun is the largest object in our Solar System.</p>
-					<p>From Earth, it looks to be the same size as the moon, but it's actually 400 times bigger!</p>
-					<br>
-					<p>The Sun is 1,390,000 km in diameter, and has a mass of 1.989 x 10^30 kg.</p>
-					<p>This is 99.8% of all the mass in our Solar System!</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-        <a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">How hot?</a>
-        <div id="fact3" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">It's the hottest!</h4>
-                    </div>
-                    <div class="modal-body">
-						<p>The Sun is the hottest thing in our Solar System.</p>
-						<br>
-                        <p>The Sun has a temperature of 9,980 degrees (5800 K) on its surface, and 28 million degrees (15600000 K) in its core.</p>
-						<p>Remember not to look directly at it!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">A Star</a>
-        <div id="fact4" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">It's a star!</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>The Sun is a star, and the closest one to us.</p>
-                        <br>
-                        <p>In fact, the Sun is bigger than 90% of all other stars.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact5" class="btn btn-lg btn-primary" data-toggle="modal">Solar flares</a>
-        <div id="fact5" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">What's a solar flare?</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Solar flares are winds of particles with high energy that emit from the Sun's surface.</p>
-                        <br>
-                        <p>These winds cause different disturbances on Earth, and are the reason we have the northern lights (know as the aurora borealis).</p>
-						<br>
-						<p>Mouse over the Sun to see them in motion!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-		
-		<a href="#fact6" class="btn btn-lg btn-primary" data-toggle="modal">Sunspots</a>
-        <div id="fact6" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">What are sunspots?</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Sunspots are dark spots on the Sun's surface that are much cooler than the rest of the surface.</p>
-						<br>
-                        <p>These spots are around 3,000 degrees cooler, and are a result of the Sun's magnetic field.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-		
-		<a href="#fact7" class="btn btn-lg btn-primary" data-toggle="modal">Magnetic field</a>
-        <div id="fact7" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">How big is its pull?</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>The Sun has a magnetic field that is big enough to pull all the other planets in our Solar System around it.</p>
-                        <br>
-                        <p>This magnetic field comes from its massive size and density, and and can pull objects over 3 billion miles out (including Pluto)!</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-		
-		<a href="#fact8" class="btn btn-lg btn-primary" data-toggle="modal">Inside out</a>
-        <div id="fact8" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Layers of the Sun</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>The Sun consist of the following layers from the inside out:</p>
-                        <p>- The Core</p>
-						<p>- The Radioactive Zone</p>
-						<p>- The Conective Zone</p>
-						<p>- The Photosphere (the surface you can see)</p>
-						<p>- The Chromoshpere</p>
-						<p>- The Corona</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-    </div>
     </body>
 </html>

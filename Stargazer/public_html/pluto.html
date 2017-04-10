@@ -16,6 +16,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
             body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+			.img-responsive { float: none; margin: 0 auto; }
+			.btn { margin-bottom: 5px; }
         </style>
     </head>
     <body>
@@ -67,102 +69,102 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore Pluto!</h1>
+        <h1 class="text-center">Let's Explore Pluto!</h1>
             <div class="row">
+				<!-- LEFT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Pluto's Number</a>
+					<div id="fact1" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">The Ninth Planet</h4>
+								</div>
+								<div class="modal-body">
+									<p>As the ninth planet Pluto is the last planet in our solar system.</p>
+									<br>
+									<p>For some time we we looking for a planet beyond Pluto, but none was found.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">Size</a>
+					<div id="fact2" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">The Smallest Planet</h4>
+								</div>
+								<div class="modal-body">
+									<p>Pluto is smaller than Earth's moon.</p>
+									<br>
+									<p>Due to its size Pluto is now called a dwarf planet.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- IMAGE -->
                 <div class="col-lg-4">
                     <a href="#">
 						<img src="images/pluto.gif" onmouseover="this.src='images/plutoA.gif';" 
 							onmouseout="this.src='images/pluto.gif';" class="img-responsive">
 					</a>
                 </div>
+				<!-- RIGHT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">Orbit</a>
+					<div id="fact3" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Pluto and Neptune</h4>
+								</div>
+								<div class="modal-body">
+									<p>Sometimes Pluto moves closer to the sun than Neptune along its orbit.</p>
+									<br>
+									<p>Pluto and Neptune's orbits don't cross however and won't crash into each other.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">Moons</a>
+					<div id="fact4" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">It has Five Moons</h4>
+								</div>
+								<div class="modal-body">
+									<p>Pluto has five moons: Charon, Hydra, Nix, Kerberos, and Styx.</p>
+									<br>
+									<p>Pluto's largest moon, Charon, is about half the size of Pluto.</p>
+									<br>
+									<p>The gravity between Pluto and Charon cause them to orbit around each other.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
 
-        <div class="example">
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Pluto's Number</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">The Ninth Planet</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>As the ninth planet Pluto is the last planet in our solar system.</p>
-                        <br>
-                        <p>For some time we we looking for a planet beyond Pluto, but none was found.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Size</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">The Smallest Planet</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Pluto is smaller than Earth's moon.</p>
-                        <br>
-                        <p>Due to its size Pluto is now called a dwarf planet.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Orbit</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Pluto and Neptune</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Sometimes Pluto moves closer to the sun than Neptune along its orbit.</p>
-                        <br>
-                        <p>Pluto and Neptune's orbits don't cross however and won't crash into each other.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Moons</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">It has Five Moons</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Pluto has five moons: Charon, Hydra, Nix, Kerberos, and Styx.</p>
-                        <br>
-                        <p>Pluto's largest moon, Charon, is about half the size of Pluto.</p>
-                        <br>
-                        <p>The gravity between Pluto and Charon cause them to orbit around each other.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        </div>
-        
-	
     </body>
 </html>
