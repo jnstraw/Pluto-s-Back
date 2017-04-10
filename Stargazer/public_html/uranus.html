@@ -16,6 +16,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
             body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+			.img-responsive { float: none; margin: 0 auto; }
+			.btn { margin-bottom: 5px; }
         </style>
     </head>
     <body>
@@ -67,98 +69,100 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore Jupiter!</h1>
+        <h1 class="text-center">Let's Explore Uranus!</h1>
             <div class="row">
+				<!-- LEFT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Uranus's Number</a>
+					<div id="fact1" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">The Seventh Planet</h4>
+								</div>
+								<div class="modal-body">
+									<p>Uranus is the seventh planet in our solar system and third gas planet from the sun.</p>
+									<br>
+									<p>Uranus is further from the sun than Saturn and closer than Neptune.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">Color</a>
+					<div id="fact2" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Blue-Green</h4>
+								</div>
+								<div class="modal-body">
+									<p>Uranus is a gas planet with a blue-green color.</p>
+									<br>
+									<p>Uranus' color isn't as vivid as Neptune's deep blue color.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- IMAGE -->
                 <div class="col-lg-4">
                     <a href="#">
 						<img src="images/uranus.gif" onmouseover="this.src='images/uranusA.gif';" 
 							onmouseout="this.src='images/uranus.gif';" class="img-responsive">
 					</a>
                 </div>
+				<!-- RIGHT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">Axis</a>
+					<div id="fact3" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">It's not up and down</h4>
+								</div>
+								<div class="modal-body">
+									<p>Unlike Earth, Uranus's axis is nearly parallel to its orbit around the sun.</p>
+									<br>
+									<p>Because of this we don't know where Uranus's north pole is.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">Core</a>
+					<div id="fact4" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">What Core?</h4>
+								</div>
+								<div class="modal-body">
+									<p>Most gas planets have small cores or none at all.</p>
+									<br>
+									<p>The rocky and icy material inside Uranus's gas is just floating about.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
 
-        <div class="example">
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Uranus's Number</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">The Seventh Planet</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Uranus is the seventh planet in our solar system and third gas planet from the sun.</p>
-                        <br>
-                        <p>Uranus is further from the sun than Saturn and closer than Neptune.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Color</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">Blue-Green</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Uranus is a gas planet with a blue-green color.</p>
-                        <br>
-                        <p>Uranus' color isn't as vivid as Neptune's deep blue color.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Axis</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">It's not up and down</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Unlike Earth, Uranus's axis is nearly parallel to its orbit around the sun.</p>
-                        <br>
-                        <p>Because of this we don't know where Uranus's north pole is.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Core</a>
-        <div id="fact1" class="modal fade">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title">What Core?</h4>
-                    </div>
-                    <div class="modal-body">
-                        <p>Most gas planets have small cores or none at all.</p>
-                        <br>
-                        <p>The rocky and icy material inside Uranus's gas is just floating about.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-	
     </body>
 </html>
