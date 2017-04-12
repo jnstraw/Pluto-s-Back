@@ -16,6 +16,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
             body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+			.img-responsive { float: none; margin: 0 auto; }
+			.btn { margin-bottom: 5px; }
         </style>
     </head>
     <body>
@@ -67,226 +69,234 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore Venus!</h1>
+        <h1 class="text-center">Let's Explore Venus!</h1>
             <div class="row">
+				<!-- LEFT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Distance</a>
+					<div id="fact1" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Number 2</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus is the second planet from the Sun</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">No Moon</a>
+					<div id="fact2" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Nothing is something</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus is one of the only two planets that doesn't have a single moon!</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">Twins</a>
+					<div id="fact3" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">How Interesting</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus is considered as Earth's twin, because they're nearly the same size</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">Years</a>
+					<div id="fact4" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">How Many Days in a Year?</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus takes 225 days to complete one year, thats 150 days shorter than earth!</p>
+												<p>Where did the time go?</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact5" class="btn btn-lg btn-primary" data-toggle="modal">Hot In Here</a>
+					<div id="fact5" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Bring a bathing suit</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus is the hottest planet, even more so than Mercury which is closer to the Sun!</p>
+												<p>This is because of planet activity, atmosphere, and the Sun. Which you may learn more about later. </p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact6" class="btn btn-lg btn-primary" data-toggle="modal">Old Thoughts</a>
+					<div id="fact6" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">What people used to think</h4>
+											</div>
+											<div class="modal-body">
+												<p>People used to think that Venus was liveable paradise.</p>
+												<p>This actually turned out to be untrue.</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+				</div>
+				<!-- IMAGE -->
                 <div class="col-lg-4">
                     <a href="#">
 						<img src="images/venus.gif" onmouseover="this.src='images/venusA.gif';" 
 							onmouseout="this.src='images/venus.gif';" class="img-responsive">
 					</a>
                 </div>
+				<!-- RIGHT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact7" class="btn btn-lg btn-primary" data-toggle="modal">Poisonous</a>
+					<div id="fact7" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Gas Mask Anyone?</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus has thick clouds, that if anyone was to travel there the clouds would</p>
+												<p>would kill them because of the poison in them.</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact8" class="btn btn-lg btn-primary" data-toggle="modal">Days</a>
+					<div id="fact8" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">What's the time?</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus rotates so slowly, that a day on Venus is longer than a year on venus</p>
+												<p>whoa...</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact9" class="btn btn-lg btn-primary" data-toggle="modal">The Gods</a>
+					<div id="fact9" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Roman God</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus was named after the Roman God "Venus" which means love and beauty</p>
+												<p>This is probably because Venus would be the brightest star in the sky</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact10" class="btn btn-lg btn-primary" data-toggle="modal">Closer</a>
+					<div id="fact10" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">How Close?</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus is the closest planet to Earth, only being 41,000,000 km away, thats 25,500,000 miles!</p>
+												<p>Vacation anyone?</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fac11" class="btn btn-lg btn-primary" data-toggle="modal">Stormy</a>
+					<div id="fact11" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Bring on the storms!</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus has intense storms almost always, which is causing havoc all over</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+					<a href="#fact12" class="btn btn-lg btn-primary" data-toggle="modal">Circular</a>
+					<div id="fact12" class="modal fade">
+							<div class="modal-dialog">
+									<div class="modal-content">
+											<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+													<h4 class="modal-title">Venus likes perfection</h4>
+											</div>
+											<div class="modal-body">
+												<p>Venus's path around the sun is the closest to being a circle, while others are ellipses</P>
+												<p>Elipse has no sides, but is like an oval</p>
+											</div>
+											<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+											</div>
+									</div>
+							</div>
+					</div>
+				</div>
             </div>
-        <a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Distance</a>
-        <div id="fact1" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Number 2</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus is the second planet from the Sun</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">No Moon</a>
-        <div id="fact2" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Nothing is something</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus is one of the only two planets that doesn't have a single moon!</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">Twins</a>
-        <div id="fact3" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">How Interesting</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus is considered as Earth's twin, because they're nearly the same size</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">Years</a>
-        <div id="fact4" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">How Many Days in a Year?</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus takes 225 days to complete one year, thats 150 days shorter than earth!</p>
-                                    <p>Where did the time go?</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact5" class="btn btn-lg btn-primary" data-toggle="modal">Hot In Here</a>
-        <div id="fact5" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Bring a bathing suit</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus is the hottest planet, even more so than Mercury which is closer to the Sun!</p>
-                                    <p>This is because of planet activity, atmosphere, and the Sun. Which you may learn more about later. </p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact6" class="btn btn-lg btn-primary" data-toggle="modal">Old Thoughts</a>
-        <div id="fact6" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">What people used to think</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>People used to think that Venus was liveable paradise.</p>
-                                    <p>This actually turned out to be untrue.</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact7" class="btn btn-lg btn-primary" data-toggle="modal">Poisonous</a>
-        <div id="fact7" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Gas Mask Anyone?</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus has thick clouds, that if anyone was to travel there the clouds would</p>
-                                    <p>would kill them because of the poison in them.</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact8" class="btn btn-lg btn-primary" data-toggle="modal">Days</a>
-        <div id="fact8" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">What's the time?</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus rotates so slowly, that a day on Venus is longer than a year on venus</p>
-                                    <p>whoa...</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact9" class="btn btn-lg btn-primary" data-toggle="modal">The Gods</a>
-        <div id="fact9" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Roman God</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus was named after the Roman God "Venus" which means love and beauty</p>
-                                    <p>This is probably because Venus would be the brightest star in the sky</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact10" class="btn btn-lg btn-primary" data-toggle="modal">Closer</a>
-        <div id="fact10" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">How Close?</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus is the closest planet to Earth, only being 41,000,000 km away, thats 25,500,000 miles!</p>
-                                    <p>Vacation anyone?</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fac11" class="btn btn-lg btn-primary" data-toggle="modal">Stormy</a>
-        <div id="fact11" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Bring on the storms!</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus has intense storms almost always, which is causing havoc all over</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
-        <a href="#fact12" class="btn btn-lg btn-primary" data-toggle="modal">Circular</a>
-        <div id="fact12" class="modal fade">
-                <div class="modal-dialog">
-                        <div class="modal-content">
-                                <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                        <h4 class="modal-title">Venus likes perfection</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Venus's path around the sun is the closest to being a circle, while others are ellipses</P>
-                                    <p>Elipse has no sides, but is like an oval</p>
-                                </div>
-                                <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                        </div>
-                </div>
-        </div>
+        
     </body>
 </html>
