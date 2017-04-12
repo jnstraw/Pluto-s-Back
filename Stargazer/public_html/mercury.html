@@ -16,6 +16,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
             body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+			.img-responsive { float: none; margin: 0 auto; }
+			.btn { margin-bottom: 5px; }
         </style>
     </head>
     <body>
@@ -67,37 +69,403 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore Mercury!</h1>
+        <h1 class="text-center">Let's Explore Mercury!</h1>
             <div class="row">
+			<!-- LEFT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">What's Mercury's number?</a>
+					<div id="fact1" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Mercury's position</h4>
+								</div>
+								<div class="modal-body">
+									<p>Mercury is the 1st planet from the sun.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">Any moons?</a>
+
+					<div id="fact2" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Nope!</h4>
+								</div>
+								<div class="modal-body">
+									<p>Mercury is one of the two planets without a moon.</p>
+									<br>
+									<p>Can you find the other one?</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+						<a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">Size</a>
+						<div id="fact3" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">It's the smallest!</h4>
+									</div>
+									<div class="modal-body">
+										<p>Mercury is the smallest sized planet in our Solar System.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">Density</a>
+						<div id="fact4" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">2nd Place</h4>
+									</div>
+									<div class="modal-body">
+										<p>Mercury is the second densest planet in our Solar System.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact5" class="btn btn-lg btn-primary" data-toggle="modal">Speedy Mercury</a>
+						<div id="fact5" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">What a year!</h4>
+									</div>
+									<div class="modal-body">
+										<p>One year on Mercury is 88 days on Earth.</p>
+										<br>
+										<p>This means it only takes 88 days to circle the Sun, faster than any other planet.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact6" class="btn btn-lg btn-primary" data-toggle="modal">Discovered by...</a>
+						<div id="fact6" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">No one knows!</h4>
+									</div>
+									<div class="modal-body">
+										<p>Unlike other planets, no one knows who was the first to discover Mercury.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact7" class="btn btn-lg btn-primary" data-toggle="modal">Under the Surface</a>
+						<div id="fact7" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">The Core</h4>
+									</div>
+									<div class="modal-body">
+										<p>Recent studies show that Mercury might have a molten core inside of it, much like the Earth does.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact8" class="btn btn-lg btn-primary" data-toggle="modal">A Bumpy Ride</a>
+						<div id="fact8" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Craters</h4>
+									</div>
+									<div class="modal-body">
+										<p>Mercury has more craters than any other planet in our Solar System.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact9" class="btn btn-lg btn-primary" data-toggle="modal">Second Hottest</a>
+						<div id="fact9" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Not so Hot</h4>
+									</div>
+									<div class="modal-body">
+										<p>Even though it is the closest planet to the Sun, Mercury is only the second hottest planet.</p>
+										<br>
+										<p>However, it's still too hot to sustain life.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact10" class="btn btn-lg btn-primary" data-toggle="modal">Mercury's Name</a>
+						<div id="fact10" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">What's in a name?</h4>
+									</div>
+									<div class="modal-body">
+										<p>Mercury was named after the Roman messenger to the Gods.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<a href="#fact11" class="btn btn-lg btn-primary" data-toggle="modal">Temperature Change</a>
+						<div id="fact11" class="modal fade">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+										<h4 class="modal-title">Hot and Cold</h4>
+									</div>
+									<div class="modal-body">
+										<p>Mercury has the most extreme temperature change in the entire Solar System.</p>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+				<!-- IMAGE -->
                 <div class="col-lg-4">
                     <a href="#">
 						<img src="images/mercury.gif" onmouseover="this.src='images/mercuryA.gif';" 
 							onmouseout="this.src='images/mercury.gif';" class="img-responsive">
 					</a>
                 </div>
+				<!-- RIGHT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact12" class="btn btn-lg btn-primary" data-toggle="modal">Asteroid Impact</a>
+					<div id="fact12" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Long ago...</h4>
+								</div>
+								<div class="modal-body">
+									<p>Scientist believe Mercury survived an impact with a giant asteroid many many years ago.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact13" class="btn btn-lg btn-primary" data-toggle="modal">A Day on Mercury</a>
+					<div id="fact13" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Longer than a year?</h4>
+								</div>
+								<div class="modal-body">
+									<p>Because it moves around the Sun so quickly, a day on Mercury lasts longer than a year!</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact14" class="btn btn-lg btn-primary" data-toggle="modal">Ice</a>
+					<div id="fact14" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Cool as Ice</h4>
+								</div>
+								<div class="modal-body">
+									<p>Despite being so close to the Sun, Mercury has ice along parts of its surface.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact15" class="btn btn-lg btn-primary" data-toggle="modal">Mercury's Tails</a>
+					<div id="fact15" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Mercury's Tails</h4>
+								</div>
+								<div class="modal-body">
+									<p>Mercury has streams of particles that come off of its surface to creatye "tails".</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact16" class="btn btn-lg btn-primary" data-toggle="modal">Volcanoes</a>
+					<div id="fact16" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Long ago...</h4>
+								</div>
+								<div class="modal-body">
+									<p>Scientist belive that long ago Mercury used to have volcanoes on its surface.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact17" class="btn btn-lg btn-primary" data-toggle="modal">How Close?</a>
+					<div id="fact17" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Close to the Sun</h4>
+								</div>
+								<div class="modal-body">
+									<p>Mercury is only 57,909,175 km, or 0.38 AU, away from the Sun (35,983,095 miles).</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact18" class="btn btn-lg btn-primary" data-toggle="modal">From the Earth?</a>
+					<div id="fact18" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Distance from the Earth</h4>
+								</div>
+								<div class="modal-body">
+									<p>Mercury is 77,000,000 km (48,000,000 miles) away from Earth.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact19" class="btn btn-lg btn-primary" data-toggle="modal">Hubble Space Telescope</a>
+					<div id="fact19" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Can't see Mercury</h4>
+								</div>
+								<div class="modal-body">
+									<p>Because it's so close to the Sun, Mecury can't be seen by the Hubble Sapce Telescope.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact20" class="btn btn-lg btn-primary" data-toggle="modal">Without a Telescope</a>
+					<div id="fact20" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">You can see Mercury</h4>
+								</div>
+								<div class="modal-body">
+									<p>Mercury can be seen without the use of a telescope.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact21" class="btn btn-lg btn-primary" data-toggle="modal">Smaller than Moons</a>
+					<div id="fact21" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">How small?</h4>
+								</div>
+								<div class="modal-body">
+									<p>There are a number of moons in the Solar System that are larger than Mecury.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-		<ul>
-		<li>1st planet from the Sun</li>
-		<li>One of two planets without a moon</li>
-		<li>Smallest planet in the Solar System</li>
-		<li>Second densest planet</li>
-		<li>One year on Mercury is 88 days on Earth</li>
-		<li>no one knows who discovered Mercury</li>
-		<li>Recents studies show that Mercury might have a molten core like Earth</li>
-		<li>The most cratered planet in the Solar System</li>
-		<li>Even though it is the closest planet to the Sun, it is the second hottest planet</li>.
-		<li>Named after the Roman messenger to the Gods</li>
-		<li>Has the most extreme temperature change in the Solar System</li>
-		<li>Scientists think Mercury survived a impact with a giant asteroid many many years ago</li>
-		<li>A day last longer than a year on Mercury</li>
-		<li>Even thought it is close to the Sun, Mercury has ice</li>
-		<li>Mercury has streams of particles coming off its surface giving it "tails"</li>
-		<li>A long time ago, Meercury could have had volcanoes</li>
-		<li>57,909,175 km, or 0.38 AU, away from the Sun (35,983,095 miles)</li>
-		<li>The Hubble Sapce Telescope cannot look at Mercury because it is too close to the Sun</li>
-		<li>77,000,000 km (48,000,000 miles) away from Earth</li>
-		<li>Mercury can be seen without a telescope</li>
-		<li>Some of the Moons inn the Solar System are larger than Mercury</li>
-	</ul>
     </body>
 </html>

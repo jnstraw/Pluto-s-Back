@@ -16,6 +16,8 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <style type="text/css">
             body { background-image: url(images/back.png) !important; color: #a239ca !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+			.img-responsive { float: none; margin: 0 auto; }
+			.btn { margin-bottom: 5px; }
         </style>
     </head>
     <body>
@@ -67,36 +69,120 @@ and open the template in the editor.
                 </div>
             </div>
         </nav>
-        <h1>Let's Explore Saturn!</h1>
+        <h1 class="text-center">Let's Explore Saturn!</h1>
             <div class="row">
+				<!-- LEFT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact1" class="btn btn-lg btn-primary" data-toggle="modal">Saturn's Number</a>
+					<div id="fact1" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">The Sixth Planet</h4>
+								</div>
+								<div class="modal-body">
+									<p>Saturn is the sixth planet in our solar system and second gas planet from the sun.</p>
+									<br>
+									<p>Saturn is further from the sun than Jupiter and closer than Uranus.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact2" class="btn btn-lg btn-primary" data-toggle="modal">Color</a>
+					<div id="fact2" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">Yellow</h4>
+								</div>
+								<div class="modal-body">
+									<p>Saturn is a pale yellow color.</p>
+									<br>
+									<p>Jupiter may have brighter colors but Saturn is impressive in other ways.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact3" class="btn btn-lg btn-primary" data-toggle="modal">Rings</a>
+					<div id="fact3" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">The Rings</h4>
+								</div>
+								<div class="modal-body">
+									<p>Saturn's rings are made of chunks of rock and ice orbiting around the planet.</p>
+									<br>
+									<p>While other planets have rings Saturn's are the brightest.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- IMAGE -->
                 <div class="col-lg-4">
                     <a href="#">
 						<img src="images/saturn.gif" onmouseover="this.src='images/saturnA.gif';" 
 							onmouseout="this.src='images/saturn.gif';" class="img-responsive">
 					</a>
                 </div>
+				<!-- RIGHT SIDE -->
+				<div class="col-lg-4 text-center">
+					<a href="#fact4" class="btn btn-lg btn-primary" data-toggle="modal">Moons</a>
+					<div id="fact4" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">There's a Lot</h4>
+								</div>
+								<div class="modal-body">
+									<p>Saturn has more than 50 moons, some of which are in its rings.</p>
+									<br>
+									<p>The gravity pull of these moons help keep the rings in place.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<a href="#fact5" class="btn btn-lg btn-primary" data-toggle="modal">Size</a>
+					<div id="fact5" class="modal fade">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">And Shape</h4>
+								</div>
+								<div class="modal-body">
+									<p>Saturn is the second largest planet in our solar system.</p>
+									<br>
+									<p>Strangely though Saturn is wider than it is tall.</p>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-
-	<ul>
-		<li>6th planet from the sun</li>
-		<li>2nd largest planet</li>
-		<li>pale yellow color</li>
-		<li>Saturn is wider than it is tall (diameter > distance from pole to pole)</li>
-		<li>Saturn has the most prominent rings
-		<ul>
-    			<li>-There are three visible rings (ring A and B are the more visible ones)</li>
-    			<li>-The rings are composed of particles (like rocks and ice, mostly ice)</li>
-    			<li>-These particles can range from a centimeter to several meters</li>
-		</ul>		
-		<li>Saturn's moons help keep the rings in place</li>
-		<li>1,429,400,000 km (9.54 AU) from Sun (aka 888,187,982 miles)</li>
-		<li>74,897 mile diameter</li>
-		<li>Saturn is the least dense planet (less dense than water)</li>
-		<li>75% hydrogen and 25% helium.</li>
-		<li>12,000 k at the core</li>
-		<li>Saturn also has bands in its clouds (though much fainter than Jupiter's)</li>
-		<li>Saturn has long lived (though temporary) oval clouds (like the big red spot)</li>
-		<li>The rings aren't stable, but are fed by breaking satellites</li>
-	</ul>
+        
     </body>
 </html>
