@@ -1,0 +1,104 @@
+<body>
+
+    <style>
+
+    </style>
+    <div id="newCards" >
+        <center>
+            Front:<input type="text" id="newFront" name="front"/>
+            Back: <input type="text" id="newBack" name="back"/>
+            <input value="Add" type="button" onclick="userEnter();"/>
+        </center>
+    </div>
+
+    <h1 align="center">Venus Flashcards</h1>
+
+    <div id="cardButton" ><p id="cardText"></p></div>
+
+    <p align="center">
+        <input type="button" id="prevCard" value="previous" onclick="cardsHandle.cardMove(-1);"/>
+        <span id="positionIndex">0/0</span>
+        <input type="button" id="nextCard" value="next" onclick="cardsHandle.cardMove(1);"/>
+    </p>
+
+    <script> 
+        String.prototype.isEmpty = function() {// Returns if a string has only whitespace
+            return (this.length === 0 || !this.trim());
+        };
+
+        function Card(front, back){
+            /*A card is just a container that holds a front and back value! 
+                - You can get either back or front by displaying it*/
+            this.frontVal = front;
+            this.backVal = back;
+
+            this.display = function(side){
+                if( side === 0 ){
+                    return this.frontVal;
+                }else{
+                    return this.backVal;
+                }
+            };
+        }
+
+        var cardsHandle = {
+            cards: [],
+            cardInd: 0,
+            cardButton: document.getElementById("cardButton"),
+            cardText: document.getElementById("cardText"),
+            cardTPosition: document.getElementById("positionIndex"),
+            cardSide: 0,
+
+            cardAdd: function(back, front){
+                this.cards.push( new Card(back, front) );
+            },
+            cardUpdate: function(){
+                var curCard = this.cards[ this.cardInd ];
+                this.cardText.innerHTML = curCard.display( this.cardSide );
+                this.cardTPosition.innerHTML = (this.cardInd+1)+"/"+this.cards.length;
+            },
+            cardFlip: function(){
+                this.cardSide = (this.cardSide + 1) % 2;
+            },
+            cardMove: function(moveBy){
+                this.cardInd += moveBy;
+                if( this. cardInd < 0 ){
+                    this.cardInd += this.cards.length;
+                }
+                this.cardInd = this.cardInd % this.cards.length;
+
+                this.cardSide = 0;// Set back to front
+                this.cardUpdate();
+            },
+            cardTap: function(){
+                this.cardFlip();
+                this.cardUpdate();// Display card
+            }
+        };
+
+        cardsHandle.cardAdd("How close is venus to the Earth?"," 25,500,000 miles");
+        cardsHandle.cardAdd("Could you breathe on Venus?","No the clouds are full of poison.");
+        cardsHandle.cardAdd("Why is Venus the hottest planet, even though it is not the closest to the sun?","Because of planet activity, atmosphere, and the Sun");
+        cardsHandle.cardAdd("How long is one venus year?","225 earth days.");
+        cardsHandle.cardAdd("Why is Venus called earth's twin?","Because they're nearly the same size.");
+
+        cardsHandle.cardUpdate();
+
+        var userEnter = function(){
+            var nFront = document.getElementById("newFront"),
+                nBack = document.getElementById("newBack");
+
+            if( nFront.value.isEmpty() || nBack.value.isEmpty() )
+                return;
+
+            cardsHandle.cardAdd(nFront.value,nBack.value);
+            nFront.value="";
+            nBack.value="";
+            cardsHandle.cardUpdate();
+        }
+
+        cardsHandle.cardButton.addEventListener('click', function(){ cardsHandle.cardTap();} );
+
+    </script>
+
+</body>
