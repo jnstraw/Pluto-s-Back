@@ -24,6 +24,7 @@
             return (this.length === 0 || !this.trim());
         };
 
+        //Flashcard object
         function Card(front, back){
             /*A card is just a container that holds a front and back value! 
                 - You can get either back or front by displaying it*/
@@ -39,6 +40,7 @@
             };
         }
 
+        //Card operation functions
         var cardsHandle = {
             cards: [],
             cardInd: 0,
@@ -74,12 +76,14 @@
             }
         };
 
+        //Questions and answers
         cardsHandle.cardAdd("How many miles away from the sun is Uranus?","1,783,950,479 miles");
         cardsHandle.cardAdd("What is the scientifically correct pronunciation of Uranus?","your a nus");
         cardsHandle.cardAdd("How many moons large and small does Uranus have?","10 small moons and 5 large ones so 15 total moons");
         cardsHandle.cardAdd("How much of Uranus's atmosphere is hrydrogen percentage?","About 15% hyrdrogen.");
         cardsHandle.cardUpdate();
 
+        //User entry function
         var userEnter = function(){
             var nFront = document.getElementById("newFront"),
                 nBack = document.getElementById("newBack");
