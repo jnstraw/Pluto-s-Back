@@ -24,6 +24,7 @@
             return (this.length === 0 || !this.trim());
         };
 
+        //Flashcard object
         function Card(front, back){
             /*A card is just a container that holds a front and back value! 
                 - You can get either back or front by displaying it*/
@@ -39,6 +40,7 @@
             };
         }
 
+        //Flashcard operation function
         var cardsHandle = {
             cards: [],
             cardInd: 0,
@@ -74,11 +76,13 @@
             }
         };
 
+        //Questions and answers
         cardsHandle.cardAdd("Name of 4 main jupiter moons","Gallieean moons");
         cardsHandle.cardAdd("Number of planets","8-9");
         cardsHandle.cardAdd("Name for the distance from earth to sun","Astronomical Unit");
         cardsHandle.cardUpdate();
 
+        //Flashcard user entry function
         var userEnter = function(){
             var nFront = document.getElementById("newFront"),
                 nBack = document.getElementById("newBack");
