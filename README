@@ -10,3 +10,16 @@ Each planet in the system has their own information with facts about them. Along
 an interactive Javascript flash game to track progress and knowledge of the system.
 
 We hope teachers would use this in the classroom to help teach their students more about the universe around us.
+
+To naviagte to the various planets, you can hover over the planets on the main page, or use the menu bar at the top, whcih is a drop down bar.
+This bar is at the top of every page for easier navigation. If chosen to use the hover over method, the planet will spin when you hover over it.
+This is to indicate whih planet you'll be taken to if you click.
+
+On each planet page are various buttons that ask questions. Upon clicking on these, the answer will popup. To exit out of these, click on
+the X in the upper right corner. Hovering over the planet on this page also animates.
+
+Each planet is also equiped with a flashcard game. Clicking this button will take you to another window with all the flashcards for that planet.
+To view the answer of a certain flashcard, click on the questions and the answr will be shown. Flashcards can also be added with the boxes at the
+top of the page. The front is where the question goes and the back is where the answer goes. To shuffle through the flashcards, use the back and next
+buttons at the bottom of the page. To exit the flashcard game, close the window and you'll be taken back to the planet page you were originally on
+before playing the game.
