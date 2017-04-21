@@ -24,6 +24,7 @@
             return (this.length === 0 || !this.trim());
         };
 
+        //Flashcard object
         function Card(front, back){
             /*A card is just a container that holds a front and back value! 
                 - You can get either back or front by displaying it*/
@@ -39,6 +40,7 @@
             };
         }
 
+        //Flashcard operation functions
         var cardsHandle = {
             cards: [],
             cardInd: 0,
@@ -74,6 +76,7 @@
             }
         };
 
+        //Questions and answers
         cardsHandle.cardAdd("How many AUs away from the sun is Pluto?","39.5");
         cardsHandle.cardAdd("What is the diameter of Pluto in km?","2372 km");
         cardsHandle.cardAdd("What is the name of the heart shaped glacier region on Pluto?","Sputnik Planum");
@@ -85,6 +88,7 @@
         
         cardsHandle.cardUpdate();
 
+        //Flashcard user entry functions
         var userEnter = function(){
             var nFront = document.getElementById("newFront"),
                 nBack = document.getElementById("newBack");
