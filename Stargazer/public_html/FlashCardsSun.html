@@ -24,6 +24,7 @@
             return (this.length === 0 || !this.trim());
         };
 
+        //Flashcard object
         function Card(front, back){
             /*A card is just a container that holds a front and back value! 
                 - You can get either back or front by displaying it*/
@@ -39,6 +40,7 @@
             };
         }
 
+        //Flashcard operation methods
         var cardsHandle = {
             cards: [],
             cardInd: 0,
@@ -74,6 +76,7 @@
             }
         };
 
+        //Questions and answers
         cardsHandle.cardAdd("Which layer of the sun is the surface that you see?","The Photosphere");
         cardsHandle.cardAdd("What is a sunspot?","Dark spots on the Sun's surface that are much cooler than the rest of the surface.");
         cardsHandle.cardAdd("What are solar flares?","Winds of particles with high energy that emit from the Sun's surface.");
@@ -82,6 +85,7 @@
 
         cardsHandle.cardUpdate();
 
+        //User entry functions
         var userEnter = function(){
             var nFront = document.getElementById("newFront"),
                 nBack = document.getElementById("newBack");
