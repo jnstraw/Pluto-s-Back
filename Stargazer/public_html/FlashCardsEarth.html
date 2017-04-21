@@ -25,6 +25,7 @@
             return (this.length === 0 || !this.trim());
         };
 
+        //Flashcard object
         function Card(front, back){
             /*A card is just a container that holds a front and back value! 
                 - You can get either back or front by displaying it*/
@@ -40,6 +41,7 @@
             };
         }
 
+        //Flashcard operation functions
         var cardsHandle = {
             cards: [],
             cardInd: 0,
@@ -75,6 +77,7 @@
             }
         };
 
+        //questions and answers
         cardsHandle.cardAdd("What is the distance from the earth to the sun, and what is the scientific term for that?","93,000,000 miles, and the Astronomical unit");
         cardsHandle.cardAdd("What does earth's magnetic field protect us from?","Solar winds");
         cardsHandle.cardAdd("How old is the earth?",">4.54 billion years");
@@ -82,6 +85,7 @@
         cardsHandle.cardAdd("What is the process by which earth recycles it's land?","Subduction");
         cardsHandle.cardUpdate();
 
+        //User entry functions
         var userEnter = function(){
             var nFront = document.getElementById("newFront"),
                 nBack = document.getElementById("newBack");
