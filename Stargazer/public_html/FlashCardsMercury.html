@@ -24,6 +24,7 @@
             return (this.length === 0 || !this.trim());
         };
 
+        //Flashcard object
         function Card(front, back){
             /*A card is just a container that holds a front and back value! 
                 - You can get either back or front by displaying it*/
@@ -39,6 +40,7 @@
             };
         }
 
+        //Flashcard operation methods
         var cardsHandle = {
             cards: [],
             cardInd: 0,
@@ -74,6 +76,7 @@
             }
         };
 
+        //Questions and answers
         cardsHandle.cardAdd("On mercury, which lasts longer, 1 day or 1 year?","day");
         cardsHandle.cardAdd("How many miles from Earth is mercury?","48 million");
         cardsHandle.cardAdd("Why can't the hubbel telescope look at mercury?","It is too close to the sun");
@@ -85,6 +88,7 @@
         
         cardsHandle.cardUpdate();
 
+        //User entry function
         var userEnter = function(){
             var nFront = document.getElementById("newFront"),
                 nBack = document.getElementById("newBack");
